@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+body {
+  font-family: "Open Sans";
+  height: 100%;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #5d8ec1;
+  align-items: center;
+  padding: 8px 12px;
+}
+.navBar__logo i {
+  color: #f0a84c;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  /* text-decoration: 이 뭘까요; */
+}
+.navBar__logo {
+  font-size: 24px;
+}
+.navBar__menu {
+  display: flex;
+  list-style: none;
+  /* 앞에 점을 없애준다. */
+}
+.navBar__menu li {
+  padding: 8px 12px;
+}
+.navBar__menu li:hover {
+  background-color: #f0a84c;
+  border-radius: 4px;
+}
+.navBar__icon {
+  display: flex;
+}
+.navBar__icon li {
+  padding: 8px 12px;
+}
+.narBar__hambarBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 22px;
+  color: #f0a84c;
+}
+
+@media screen and (max-width: 800px) {
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navBar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navBar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navBar__icon {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .narBar__hambarBtn {
+    position: absolute;
+    right: 32px;
+    font-size: 22px;
+    color: #f0a84c;
+  }
+  .narBar__hambarBtn i:hover {
+    color: whitesmoke;
+  }
+  .navBar__icon li:hover {
+    color: #f0a84c;
+  }
+  .narBar__hambarBtn {
+    display: block;
+  }
+  .navBar__menu.active,
+  .navBar__icon.active {
+    display: flex;
+  }
+}
