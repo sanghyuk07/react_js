@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   background-color: #5d8ec1;
   align-items: center;
-  padding: 8px 12px;
+  padding: 16px 24px;
 }
 .navBar__logo i {
   color: #f0a84c;
@@ -40,7 +40,7 @@ a {
   display: flex;
 }
 .navBar__icon li {
-  padding: 8px 12px;
+  padding: 8px 16px;
 }
 .narBar__hambarBtn {
   display: none;
@@ -50,7 +50,7 @@ a {
   color: #f0a84c;
 }
 
-@media only screen and (max-device-width: 800px) {
+@media screen and (max-width: 800px) {
   .navBar {
     flex-direction: column;
     align-items: flex-start;
