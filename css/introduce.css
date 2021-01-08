@@ -1,0 +1,177 @@
+.keyword__header {
+  background-color: #dbdcda;
+}
+#keyword {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 900;
+}
+#keyword__title {
+  margin: 0px;
+  position: relative;
+  top: 65px;
+}
+
+.introduce__about,
+.introduce__about__row {
+  flex-direction: row;
+}
+
+.introduce__about {
+  background: #dbdcda;
+  box-sizing: border-box;
+}
+
+.introduce__about__row {
+  margin: 20vh 0;
+}
+@keyframes appearBtnAnimation {
+  from {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes filplnX {
+  0% {
+    webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
+  }
+  40% {
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-transform: perspective(400px) rotateY(-20deg);
+    transform: perspective(400px) rotateY(-20deg);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateY(10deg);
+    transform: perspective(400px) rotateY(10deg);
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotateY(-5deg);
+    transform: perspective(400px) rotateY(5deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+.introudce__about__row__contents {
+  padding: 0 10px;
+  border: 2px solid #b9bbb6;
+  border-radius: 5px;
+  /* 여기서 양쪽 간격 조절 */
+  width: 20vw;
+  height: 25vh;
+  /* 여기서 양쪽 간격 조절 */
+  box-sizing: border-box;
+  margin: 0 1vw;
+  background-color: #b9bbb6;
+  animation: filplnX 0.75s ease both;
+  /* animation: appearBtnAnimation 0.5s ease-in-out forwards; */
+}
+#contents_2 {
+  animation-delay: 0.3s;
+}
+
+#contents_3 {
+  animation-delay: 0.6s;
+}
+
+#contents_4 {
+  animation-delay: 0.9s;
+}
+/* 아이콘 사이즈 */
+#introduce_font {
+  color: var(--green);
+  font-size: 3vw;
+}
+/* 아이콘 사이즈 */
+
+.introudce__about__row__content__info__title,
+.introudce__about__row__content__info__text {
+  text-align: center;
+}
+.introudce__about__row__content__info__title {
+  font-weight: 900;
+  font-size: 0.9em;
+  padding-top: 3vh;
+}
+.introudce__about__row__content__info__text {
+  font-size: 0.7em;
+}
+.flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.introudce__about__row__contents,
+.introudce__about__row__content__info {
+  flex-direction: column;
+}
+.introudce__about__row__content__info {
+  color: #616161;
+}
+.introduce {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  background: #b9bbb6;
+  height: 100%;
+  width: 100%;
+  border-top: solid black;
+}
+.introduce__aboutMe__title {
+  margin-left: 6vw;
+  margin-right: 12vw;
+  width: 25vw;
+  box-sizing: border-box;
+  text-align: center;
+  align-self: center;
+}
+.introduce__aboutMe__content {
+  font-family: Noto Sans KR, sans-serif;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-right: 8vw;
+  width: 100%;
+}
+
+.hedding {
+  position: relative;
+  display: inline-block;
+  font-size: 1.4em;
+  /* em의 정확한 뜻은 : 부모 앨리먼트 크기에 상대적으로 정헤진다 0.5em은 부모 크기의 절반 */
+  font-weight: 900;
+  margin: 30px 0;
+}
+h1 {
+  display: block;
+  font-size: 1.4em;
+  /* margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; */
+  margin: 30px 0;
+  font-weight: bold;
+}
+p {
+  display: block;
+
+  /* margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; */
+  margin: 10px 0;
+  line-height: 120%;
+}
