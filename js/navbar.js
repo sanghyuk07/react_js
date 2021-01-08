@@ -7,4 +7,11 @@ function display(){
     icons.classList.toggle('active');
 }
 
+function NonDisplay(){
+    menu.classList.remove('active');
+    icons.classList.remove('active');
+    
+}
+
 hambarBtn.addEventListener("click", display);
+menu.addEventListener("click", NonDisplay);
