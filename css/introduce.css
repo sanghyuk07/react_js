@@ -24,6 +24,7 @@
 
 .introduce__about__row {
   margin: 20vh 0;
+  flex-wrap: wrap;
 }
 @keyframes appearBtnAnimation {
   from {
@@ -76,6 +77,7 @@
   margin: 0 1vw;
   background-color: #b9bbb6;
   animation: filplnX 0.75s ease both;
+
   /* animation: appearBtnAnimation 0.5s ease-in-out forwards; */
 }
 #contents_2 {
@@ -174,4 +176,42 @@ p {
   margin-inline-end: 0px; */
   margin: 10px 0;
   line-height: 120%;
+}
+@media screen and (max-width: 400px) {
+  #introduce_font {
+    color: var(--green);
+    font-size: 12vw;
+  }
+  .introduce__about__row {
+    justify-content: center;
+  }
+  #contents_2,
+  #contents_4 {
+    margin-top: 4vh;
+  }
+  .introduce__about__row {
+    margin: 15vh 3vw;
+  }
+  .introudce__about__row__contents {
+    width: min(300px, 100%);
+  }
+  .introduce {
+    justify-content: center;
+    display: block;
+  }
+  .introduce__aboutMe__title {
+    width: min(300px, 100%);
+    margin: 0 12vw;
+    padding-top: 5vh;
+    justify-content: center;
+  }
+
+  .introduce__aboutMe__content {
+    text-align: center;
+    margin-top: 0;
+  }
+  .introduce__aboutMe__contetn__section > p {
+    padding: 0 6vw;
+    margin-bottom: 8vh;
+  }
 }

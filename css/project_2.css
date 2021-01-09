@@ -1,0 +1,68 @@
+.blog {
+  background-color: #dbdcda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog__post {
+  width: 100%;
+  padding: 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* 요소들의 총 널이가 부모 넓이보다 클 때, 이요소들을 다음 줄에 이어서 나열 해주는 기능 */
+}
+.blog__main {
+  width: calc(25% -10px);
+  overflow: hidden;
+  /* display: inline-block; */
+  /* align-items: center; */
+
+  /* overflow 속성은 요소의 박스에 내용이 더 길 때 어떻게 보일지 선택하는 기능 */
+}
+.blog__img {
+  width: 250px;
+  height: 250px;
+  /* width: 100%; */
+  border-radius: 5px;
+  transition: 0.3s linear;
+}
+.blog__info {
+  background-color: whitesmoke;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transform: translateY(-60px);
+  transition: 0.3s linear;
+}
+.blog__text {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.blog__date {
+  font-size: 0.8em;
+  font-style: italic;
+  color: var(--green);
+}
+
+.blog__main:hover .blog__img {
+  transform: translateY(20px);
+}
+.blog__main:hover .blog__info {
+  transform: translateY(-80px);
+}
+@media screen and (max-width: 630px) {
+  .blog__post {
+    justify-content: center;
+  }
+  .blog__main {
+    width: min(250px, 100%);
+  }
+  .blog__main:hover .blog__img {
+    transform: translateY(20px);
+  }
+  .blog__main:hover .blog__info {
+    transform: translateY(-80px);
+  }
+}
